@@ -1,0 +1,13 @@
+.feedback-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    width: 40rem;
+    max-width: 90%;
+
+}
+.feedback-stats h3 ,
+.feedback-stats h4 {
+    font-size: 1rem;
+}

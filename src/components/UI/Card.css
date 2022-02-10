@@ -1,0 +1,11 @@
+.card {
+    max-width: 90%;
+    width: 40rem;
+    background-color: #fff;
+    color: #343434;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    position: relative;
+}
