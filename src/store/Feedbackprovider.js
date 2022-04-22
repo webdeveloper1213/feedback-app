@@ -1,6 +1,7 @@
 import React  , {useState} from "react";
 import FeedbackContext from "./FeedbackContext";
 const Feedbackprovider = ({ children }) => {
+  
   const [feedback, setFeedback] = useState([
     { id: 1, text: "This item is from context", rating: 10 },
   ]);
