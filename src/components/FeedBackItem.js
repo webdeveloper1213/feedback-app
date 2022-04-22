@@ -24,12 +24,16 @@ const editHandler = () => {
       <li className='feedbackItem'>
           <Card>   
       <div className='ratingItem'>{item.rating}</div>
+
+   
       <button className='close' >
           <FaTimes color='purple' onClick={(deleteHandler)}></FaTimes>
       </button>
       <button className='edit'>
           <FaEdit color = 'purple' onClick= {editHandler} />
       </button>
+      
+     
       <div className='text'>{item.text}</div>
       </Card>
       </li>
