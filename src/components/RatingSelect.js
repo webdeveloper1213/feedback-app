@@ -8,10 +8,6 @@ const RatingSelect = ({onSelect}) => {
 
     const { feedbackEdit } = useContext(FeedbackContext);
 
-    // useEffect(() => {
-    //   setSelected(feedbackEdit.item.rating)
-    // }, [feedbackEdit])
-  
 
     const handleChange = (e) => {
 // console.log(typeof +e.currentTarget.value);
@@ -29,7 +25,7 @@ onSelect(+e.currentTarget.value);
       checked={selected === 1}
  
     />
-    <label htmlFor='num1'>1</label>
+    <label htmlFor='1'>1</label>
   </li>
   <li>
     <input

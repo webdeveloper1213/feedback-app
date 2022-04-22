@@ -9,7 +9,7 @@ const Button = ({children , version , type , isDisabled,onClick}) => {
   disabled = {isDisabled}
    >
       {children}
-  </button>;
+  </button>
 };
 
 Button.defaultProps = {

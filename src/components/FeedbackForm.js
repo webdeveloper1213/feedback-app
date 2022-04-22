@@ -77,7 +77,10 @@ updateFeedbackItem(feedbackEdit.item.id , newFeedback);
     addItemHandler(newFeedback);
 }
     // addItemHandler(newFeedback);
-     setText('');
+      // NOTE: reset to default state after submission
+      setButtonDisabled(true) // 👈  add this line to reset disabled
+      setRating(10) //👈 add this line to set rating back to 10
+      setText('')
     }
 
 
@@ -85,7 +88,7 @@ updateFeedbackItem(feedbackEdit.item.id , newFeedback);
       <form className='feedback-form' onSubmit = {submitHandler}>
       <h3>How would you rate your service with us ? </h3>
       <div className='ratingSelect'>
-      <RatingSelect onSelect = {selectHandler}  />
+      <RatingSelect onSelect = {selectHandler} selected = {rating} />
       </div>
     
       <div className='input-group'>
