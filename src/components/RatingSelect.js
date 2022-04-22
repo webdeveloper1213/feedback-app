@@ -12,7 +12,7 @@ const RatingSelect = ({ onSelect }) => {
     if (feedbackEdit.edit === true) {
       setSelected(feedbackEdit.item.rating);
     }
-  }, []);
+  }, [feedbackEdit]);
   const handleChange = (e) => {
     // console.log(typeof +e.currentTarget.value);
     setSelected(+e.currentTarget.value);
